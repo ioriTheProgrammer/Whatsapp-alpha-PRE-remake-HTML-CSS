@@ -1,0 +1,138 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Josefin+Sans:wght@500&family=Righteous&display=swap');
+
+body {
+  
+    font-family: 'Inter', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Righteous', cursive;
+    height: 500vh;
+    display: flex;
+    background-color: #030C0D;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.titulo{
+    display: flex;
+    color: #4E5C60;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 700;
+
+}
+
+
+.header-inicial{
+    position: absolute;
+    display: flex;
+    background: #0F181A;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+
+}
+
+.container {
+    position: relative;
+  --size-button: 40px;
+  }
+  
+  .icon{
+    color: #4E5C60;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .input {
+    display: flex;
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    font-size: 15px;
+    border: none;
+    color: #4E5C60;
+    outline: none;
+    width: var(--size-button);
+    transition: all ease 0.3s;
+    background-color: #0F181A;
+    border-radius: 3rem;
+    cursor: pointer;
+  }
+  
+  .input:focus,
+  .input:not(:invalid) {
+    width: 200px;
+    cursor: text;
+    border-bottom: solid #ffffff93 1px;
+  }
+  
+  .input:focus + .icon,
+  .input:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  .container .icon {
+    display: flex;
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+  }
+  
+  .container .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  #Header-2{
+    position: fixed;
+    background-color: #0F181A;
+    width: 100%;
+    margin-top: 50px;
+    height:50px;
+    overflow-y: hidden;
+  }
+
+  ul {
+    display: flex;
+    color: #4E5C60;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 700;
+  
+  }
+
+  .container-c{
+    display: flex;
+    background-color: #298b96;
+    margin-top: 100px;
+  
+  }
+
+li:hover{
+  color: rgb(26, 151, 120);
+  transition: 0.4ms;
+  cursor: pointer;
+}
