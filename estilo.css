@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+   
 
 
 }
@@ -15,9 +15,9 @@ body {
     font-family: 'Inter', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Righteous', cursive;
-    height: 500vh;
-    display: flex;
-    background-color: #030C0D;
+    height: 150vh;
+    
+    background-color: #080f14;
     margin: 0;
     padding: 0;
     
@@ -36,81 +36,28 @@ body {
 
 
 .header-inicial{
-    position: absolute;
     display: flex;
     background: #0F181A;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 100%;
+    height: 50px;
     padding: 1rem;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     
-
 }
-
-.container {
-    position: relative;
-  --size-button: 40px;
-  }
   
-  .icon{
-    color: #4E5C60;
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-  }
-
-  .input {
-    display: flex;
-    padding-left: var(--size-button);
-    height: var(--size-button);
-    font-size: 15px;
-    border: none;
-    color: #4E5C60;
-    outline: none;
-    width: var(--size-button);
-    transition: all ease 0.3s;
-    background-color: #0F181A;
-    border-radius: 3rem;
-    cursor: pointer;
-  }
-  
-  .input:focus,
-  .input:not(:invalid) {
-    width: 200px;
-    cursor: text;
-    border-bottom: solid #ffffff93 1px;
-  }
-  
-  .input:focus + .icon,
-  .input:not(:invalid) + .icon {
-    pointer-events: all;
-    cursor: pointer;
-  }
-  
-  .container .icon {
-    display: flex;
-    position: absolute;
-    width: var(--size-button);
-    height: var(--size-button);
-    top: 0;
-    left: 0;
-    padding: 8px;
-    pointer-events: none;
-  }
-  
-  .container .icon svg {
-    width: 100%;
-    height: 100%;
-  }
-
+ 
   #Header-2{
-    position: fixed;
+    position: sticky;
+    top:0px;
     background-color: #0F181A;
     width: 100%;
-    margin-top: 50px;
     height:50px;
     overflow-y: hidden;
+    transition: 100ms;
+    z-index: 2;
+    
+
   }
 
   ul {
@@ -121,18 +68,367 @@ body {
     font-size: 12px;
     font-family: Inter;
     font-weight: 700;
+    list-style: none;
   
   }
 
-  .container-c{
-    display: flex;
-    background-color: #298b96;
-    margin-top: 100px;
-  
-  }
+Header-2 , a{
+  color: #4E5C60;
+  text-decoration: none;
+}
+
+Header-2 , a:hover{
+  color: #1da08a;
+  text-decoration: none;
+}
+
 
 li:hover{
   color: rgb(26, 151, 120);
   transition: 0.4ms;
   cursor: pointer;
+
+}
+
+.container-da-conversa{
+  display: flex;
+  background-color: rgb(8, 18, 22);
+  width: 100%;
+  height: 70px;
+}
+
+.ney{
+  width: 50px;
+  height: 50px;
+  border-radius: 3rem;
+  margin-top: 10px;
+  margin-left: 15px ;
+}
+
+.nome-do-contato{
+  color: #c9d6da;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+
+p {
+  color: #748083;
+  margin-top: 9px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.ticks{
+  color: rgb(0, 255, 179);
+  margin-top: 33px;
+  margin-left: 10px;
+}
+
+#footer-conversas{
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  width: 100%;
+  height: 125px;
+  background-color: rgb(7, 13, 17);
+  border-top: solid rgb(16, 24, 21) 1px;
+}
+
+.cadeado{
+  margin-top: 5px;
+  margin-right: 5px;
+  color: #4E5C60;
+}
+
+.link-end-to-end{
+  color: rgb(0, 255, 200);
+}
+
+.container-da-conversa:hover{
+  background-color: #0F181A;
+  cursor: pointer;
+}
+
+.container-da-conversa:active{
+  background-color: rgb(14, 26, 26);
+}
+
+
+.botao-contatos{
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+.b-contatos{
+  display: flex;
+  position: fixed;
+  background-color: #1da074;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 3rem;
+  bottom: 0;
+  right: 9px;
+  margin-bottom:28px ;
+  
+}
+
+.botao-contatos:hover{
+  cursor: pointer;
+}
+
+
+
+
+/* codigo dos status */
+
+.my-status{
+  display: flex;
+}
+
+.foto-de-perfil{
+  display: flex;
+  margin: 10px 10px;
+  width: 50px;
+  border-radius: 3rem;
+}
+
+.recent-updates:hover{
+  background-color: #0f171a;
+  cursor: pointer;
+}
+
+.add-buttom{
+  position: absolute;
+  color: #22a790;
+  margin-left: 50px;
+  top: 140px;
+  border: #030C0D solid 2px;
+  border-radius: 3rem;
+  
+ 
+}
+
+.meus-status-h2{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9daaad;
+  margin-top: 15px;
+}
+
+.perfis{
+  width: 50px;
+  height: 50px;
+  border-radius: 3rem;
+  margin: 10px 10px;
+  border: #1da08a dashed;
+}
+
+.perfil-solid{
+  width: 50px;
+  height: 50px;
+  border-radius: 3rem;
+  margin: 10px 10px;
+  border: #1da08a solid;
+
+}
+
+.recent-updates{
+  display: flex;
+}
+
+.att-recents{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9daaad;
+  margin: 15px 15px;
+
+}
+
+.perfis-vistos{
+  width: 50px;
+  height: 50px;
+  border-radius: 3rem;
+  margin: 10px 10px;
+  border: #5a6b68 dashed;
+
+}
+
+.b-stts{
+
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+.b-add-stts{
+  display: flex;
+  position: fixed;
+  background-color: #1da074;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 3rem;
+  bottom: 0;
+  right: 9px;
+  margin-bottom:28px ;
+  
+ 
+}
+
+.b-add-stts:hover{
+  cursor: pointer;
+}
+
+
+
+
+/* css das chamadas */
+
+.chamadas-botao{
+  display: flex;
+  margin: 10px 10px 10px 10px;
+  
+}
+
+.anexo-de-chamadas{
+  background-color: #1da074;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 3rem;
+  
+  
+}
+
+.link-anexo{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  
+ 
+}
+
+.minha-chamada{
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #97ada9;
+  font-size: 12px;
+}
+
+.p-chamada{
+  margin-left: 10px;
+}
+
+.chamadas-botao:hover{
+  cursor: pointer;
+}
+
+.chamadas-rcts{
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #97ada9;
+  font-size: 12px;
+}
+
+
+
+.ligar-botao{
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+  margin-top: 350px;
+}
+
+
+.anexo-de-ligar {
+  display: flex;
+  position: fixed;
+  justify-content:center;
+  background-color: #1da074;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 3rem;
+
+}
+
+.icon-telefone{
+  margin-top: 15px;
+
+}
+
+.ligar-botao:hover{
+  cursor: pointer;
+}
+
+/* in-status */
+
+.status1{
+  display: flex;
+}
+
+.barra-de-status{
+  display: flex;
+  margin-top: 10px;
+  height: 2px;
+  background-color: #c9d6da;
+  
+}
+
+.seta{
+  display: flex;
+  margin: 15px 10px 10px;
+  color: #c9d6da;
+  justify-content: start;
+}
+
+.div-vasco{
+  
+  width: 40px;
+  height: 40px;
+  border-radius: 3rem;
+  margin-top: 10px;
+}
+
+.vasco-stts-nome{
+  color: #c9d6da;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.nome-desc{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+.tres-points{
+  display: flex;
+  color: #c9d6da;
+  margin-right: 10px;
+
+}
+
+.status1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-stts{
+display: flex;
+justify-content: center;
+max-height: 915px;
+  
 }
